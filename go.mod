@@ -1,4 +1,4 @@
-module github.com/RaymondCode/simple-demo
+module github.com/ChouE/TinyTikTok
 
 go 1.17
 
