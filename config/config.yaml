@@ -1,0 +1,47 @@
+# http服务配置
+server:
+  runMode: debug
+  httpPort: 9800
+  readTimeOut: 60
+  writerTimeOut: 60
+
+# app配置
+app:
+  defaultPageSize: 10
+  maxPageSize: 100
+  defaultContextTimeOut: 3
+  log:
+    savePath: storage/
+    fileName: log
+    fileExt: .log
+    maxSize: 10
+    maxBackups: 5
+    maxAge: 30
+
+# jwt配置
+jwt:
+  secret: pillow
+  issuer: meta
+  timeout: 6
+  maxRefresh: 6
+
+# 数据库配置
+dataSource:
+  mysql:
+    host: 127.0.0.1:3306
+    userName: root
+    password: 
+    dbName: tiktok
+    maxIdleConn: 100
+    maxOpenConn: 200
+    charset: utf8
+    parseTime: True
+    timeLocal: Local
+  redis:
+    addr: 127.0.0.1:6379
+    password:
+    dbIndex: 0
+oss:
+  accessKey: 
+  secretKey:
+  url:
